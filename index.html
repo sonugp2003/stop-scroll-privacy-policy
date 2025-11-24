@@ -69,28 +69,33 @@
         <p class="last-updated"><strong>Last Updated:</strong> November 24, 2025</p>
         
         <div class="highlight">
-            <strong>Quick Summary:</strong> Unscroll helps you stay focused by monitoring your app usage and sending reminders. We use Google AdMob for ads, which collects advertising data. All your usage statistics stay on your device.
+            <strong>Quick Summary:</strong> Unscroll helps you stay focused by automatically detecting and blocking short-form video content (YouTube Shorts, Instagram Reels, TikTok, etc.). We use Google AdMob for ads, which collects your Advertising ID only. All your usage statistics stay on your device.
         </div>
 
         <h2>1. Information We Collect</h2>
-        <p>Unscroll uses <strong>Google AdMob</strong> to display advertisements. AdMob may automatically collect:</p>
+        <p>Unscroll uses <strong>Google AdMob</strong> to display advertisements. The <strong>ONLY</strong> data collected is:</p>
         <ul>
-            <li><strong>Advertising ID</strong> - A unique identifier for advertising purposes</li>
-            <li><strong>Device information</strong> - Device model, operating system version</li>
-            <li><strong>Network information</strong> - IP address, connection type</li>
-            <li><strong>Ad interaction data</strong> - Which ads you view or click</li>
-            <li><strong>Approximate location</strong> - Only if you grant location permissions (not required by our app)</li>
+            <li><strong>Advertising ID</strong> - A unique identifier used by Google AdMob for showing personalized ads</li>
+        </ul>
+        <p><strong>We do NOT collect:</strong></p>
+        <ul>
+            <li>❌ Location data (approximate or precise)</li>
+            <li>❌ Device identifiers (IMEI, Android ID, Serial Number)</li>
+            <li>❌ Personal information (name, email, phone number)</li>
+            <li>❌ Browsing history or app activity outside Unscroll</li>
+            <li>❌ Contact information</li>
+            <li>❌ Camera, microphone, or photos</li>
         </ul>
 
         <h2>2. Data Stored Locally</h2>
         <p>The following data is stored <strong>only on your device</strong> and is <strong>NEVER transmitted to our servers</strong>:</p>
         <ul>
-            <li>App usage statistics (how many times you've opened monitored apps)</li>
-            <li>Your app settings and preferences</li>
-            <li>Biometric authentication settings (if you enable biometric lock)</li>
-            <li>Which apps you've chosen to monitor</li>
+            <li><strong>Blocking statistics</strong> - Count of how many times short-form content was blocked per app</li>
+            <li><strong>App preferences</strong> - Which apps you want to block (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter)</li>
+            <li><strong>Settings</strong> - Schedule preferences, theme selection, temporary pause state</li>
+            <li><strong>Biometric lock preference</strong> - Whether you enabled fingerprint/face unlock for settings (biometric data never leaves your device)</li>
         </ul>
-        <p><em>Note: We have no servers - all your personal usage data stays private on your device.</em></p>
+        <p><em>Note: We have no servers - all your personal data stays 100% private on your device.</em></p>
 
         <h2>3. How We Use Information</h2>
         <p>Information collected is used for:</p>
@@ -152,16 +157,46 @@
         <h2>10. Permissions Explained</h2>
         <p>Unscroll requests the following permissions:</p>
         <ul>
-            <li><strong>Usage Access</strong> - Required to monitor which apps you're using and send reminders</li>
-            <li><strong>Notifications</strong> - To send you reminders when you're on distracting apps</li>
-            <li><strong>Internet</strong> - To load advertisements</li>
-            <li><strong>Biometric (optional)</strong> - To lock settings with fingerprint/face unlock</li>
+            <li><strong>Accessibility Service</strong> - Required to detect short-form video content in 6 specific apps (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter) and automatically navigate away. This permission monitors ONLY these 6 apps and does NOT record screen content, collect data, or track activity outside targeted apps.</li>
+            <li><strong>Receive Boot Completed</strong> - Allows the app to restart the accessibility service after device reboot (if you had it enabled)</li>
+            <li><strong>Internet</strong> - Required to load advertisements from Google AdMob</li>
+            <li><strong>Biometric (optional)</strong> - To lock app settings with fingerprint or face unlock for additional security</li>
         </ul>
+        <p><strong>Note:</strong> Unscroll does NOT request or use location, camera, microphone, contacts, SMS, or phone permissions.</p>
+
+        <h2>11. Accessibility Service Transparency</h2>
+        <p>Unscroll uses Android's <strong>AccessibilityService API</strong> solely for content blocking. Here's exactly what it does:</p>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">What It Monitors:</h3>
+        <ul>
+            <li>Only these 6 apps: YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter/X</li>
+            <li>Detects UI patterns indicating short-form video screens (Shorts, Reels, etc.)</li>
+            <li>No monitoring outside these 6 apps</li>
+        </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">What It Does:</h3>
+        <ul>
+            <li>When short-form content is detected, automatically presses the back button or navigates to home screen</li>
+            <li>Updates local blocking statistics (stored only on your device)</li>
+            <li>Nothing else - no recording, no data collection, no transmission</li>
+        </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">What It Does NOT Do:</h3>
+        <ul>
+            <li>❌ Does NOT record or capture screen content</li>
+            <li>❌ Does NOT collect or read text, passwords, or personal information</li>
+            <li>❌ Does NOT transmit any data to external servers</li>
+            <li>❌ Does NOT track your activity outside the 6 targeted apps</li>
+            <li>❌ Does NOT access clipboard, keyboard input, or other apps</li>
+        </ul>
+        
+        <p><strong>You are in control:</strong> You can disable the accessibility service anytime in Android Settings → Accessibility → Unscroll → Toggle OFF.</p>
 
         <div class="contact">
             <h2>Contact Us</h2>
             <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:support.unscroll@gmail.com">support.unscroll@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></p>
+            <p><strong>Developer:</strong> Available via Google Play Store listing</p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
         </div>
 
