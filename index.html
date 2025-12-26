@@ -66,42 +66,72 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Unscroll</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> December 25, 2025</p>
+        <p class="last-updated"><strong>Last Updated:</strong> December 26, 2025</p>
         
         <div class="highlight">
-            <strong>Quick Summary:</strong> Unscroll helps you stay focused by automatically detecting and blocking short-form video content (YouTube Shorts, Instagram Reels, TikTok, etc.). We use Google AdMob for ads, which collects your Advertising ID only. All your usage statistics stay on your device. We do not collect, store, or transmit any personal data.
+            <strong>Quick Summary:</strong> Unscroll helps you stay focused by automatically detecting and blocking short-form video content (YouTube Shorts, Instagram Reels, TikTok, Facebook Reels, Snapchat Spotlight, Twitter/X videos). We use Google AdMob for ads, which may collect your Advertising ID, approximate location via IP, device information, and ad interaction data per Google’s policies. Crash diagnostics and basic analytics are <strong>disabled by default</strong> and collected only if you <strong>explicitly opt in</strong> in-app. All blocking statistics and preferences stay on your device.
         </div>
 
         <h2>1. Information We Collect</h2>
-        <p>Unscroll uses <strong>Google AdMob</strong> to display advertisements. The <strong>ONLY</strong> data collected is:</p>
+        <p>Unscroll integrates <strong>Google AdMob</strong> for ads and optional <strong>Firebase</strong> services. Data collection is limited and compliant with Google policies:</p>
         <ul>
-            <li><strong>Advertising ID</strong> - A unique identifier used by Google AdMob for showing personalized ads</li>
+            <li><strong>Advertising data (via Google AdMob)</strong>: Advertising ID, approximate location inferred from IP, device information (model, OS version, screen size), ad interaction data (views, clicks) — used to serve and measure ads.</li>
+            <li><strong>Crash diagnostics (via Firebase Crashlytics)</strong>: Stack traces and device state at time of crash — <em>disabled by default</em>; only collected if you <strong>opt in</strong> in settings.</li>
+            <li><strong>Basic analytics (via Firebase Analytics)</strong>: Event telemetry about feature usage — <em>disabled by default</em>; only collected if you <strong>opt in</strong> in settings.</li>
+            <li><strong>FCM token</strong>: A messaging token used to receive notifications — stored <em>locally</em> on your device.</li>
         </ul>
         <p><strong>We do NOT collect:</strong></p>
         <ul>
             <li>❌ Location data (approximate or precise)</li>
             <li>❌ Device identifiers (IMEI, Android ID, Serial Number)</li>
             <li>❌ Personal information (name, email, phone number)</li>
-            <li>❌ Browsing history or app activity outside Unscroll</li>
+            <li>❌ Browsing history or app content outside Unscroll’s targeted UI checks</li>
             <li>❌ Contact information</li>
             <li>❌ Camera, microphone, or photos</li>
         </ul>
 
         <h2>2. Data Stored Locally</h2>
-        <p>The following data is stored <strong>only on your device</strong> and is <strong>NEVER transmitted to our servers</strong>:</p>
+        <p>The following data is stored <strong>only on your device</strong> and is <strong>never transmitted to our servers</strong>:</p>
         <ul>
             <li><strong>Blocking statistics</strong> - Count of how many times short-form content was blocked per app</li>
             <li><strong>App preferences</strong> - Which apps you want to block (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter)</li>
             <li><strong>Settings</strong> - Schedule preferences, theme selection, temporary pause state</li>
         </ul>
-        <p><em>Note: We have no servers - all your personal data stays 100% private on your device.</em></p>
+        <p><em>Note: We have no backend servers; your data remains on-device.</em></p>
 
         <h2>3. How We Use Information</h2>
         <p>Information collected is used for:</p>
         <ul>
-            <li><strong>Ad personalization</strong> - Google AdMob uses data to show relevant ads</li>
+            <li><strong>Ad personalization</strong> - Google AdMob uses data to show relevant ads (subject to UMP consent and device ad settings)</li>
             <li><strong>App functionality</strong> - To remember your settings and track your progress</li>
-            <li><strong>App improvement</strong> - Anonymous crash reports help us fix bugs</li>
+            <li><strong>App improvement</strong> - Crash reports and analytics are <em>opt-in</em> and help fix bugs and improve UX</li>
+        </ul>
+
+        <h2>3.1. Firebase Analytics & Crashlytics Opt-In Policy</h2>
+        <div class="highlight">
+            <strong>Important: User Consent Required</strong>
+            <p>Firebase Analytics and Crashlytics are <strong>DISABLED by default</strong> when you first install Unscroll. These services will <strong>ONLY</strong> collect data if you <strong>explicitly enable them</strong> in the app's Settings menu.</p>
+        </div>
+        <p><strong>How to Enable/Disable (Your Choice):</strong></p>
+        <ul>
+            <li>Go to <strong>Unscroll → Settings → Privacy & Data</strong></li>
+            <li>Toggle <strong>"Help improve Unscroll with crash reports"</strong> (Firebase Crashlytics)</li>
+            <li>Toggle <strong>"Help improve Unscroll with anonymous usage analytics"</strong> (Firebase Analytics)</li>
+            <li>You can enable/disable these at any time</li>
+            <li>No data is collected unless you turn these ON</li>
+        </ul>
+        <p><strong>What happens if you opt in:</strong></p>
+        <ul>
+            <li><strong>Firebase Crashlytics (if enabled)</strong>: Collects crash stack traces, device model, OS version, and app state at crash time to help us fix bugs. No personal information is collected.</li>
+            <li><strong>Firebase Analytics (if enabled)</strong>: Collects anonymous event telemetry (e.g., "user opened settings", "user paused blocking") to understand which features are used. No personal information is collected.</li>
+            <li><strong>Your data remains anonymous</strong>: Firebase does not link crash/analytics data to your identity</li>
+        </ul>
+        <p><strong>What happens if you opt out (default):</strong></p>
+        <ul>
+            <li>✅ No crash reports sent to our servers</li>
+            <li>✅ No analytics data collected</li>
+            <li>✅ All app functionality works normally</li>
+            <li>✅ You can still use all features (free and premium)</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
@@ -115,6 +145,14 @@
                 <strong>Google Play Billing</strong> - For in-app purchases (premium features)
                 <br>Privacy Policy: <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments Privacy</a>
             </li>
+            <li>
+                <strong>Firebase Crashlytics</strong> (opt-in) - Crash diagnostics to improve stability
+                <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy & Security</a>
+            </li>
+            <li>
+                <strong>Firebase Analytics</strong> (opt-in) - Basic telemetry for feature usage
+                <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy & Security</a>
+            </li>
         </ul>
 
         <h2>5. Data Sharing</h2>
@@ -123,6 +161,7 @@
         <ul>
             <li><strong>Google AdMob</strong> - For advertising purposes as described in their privacy policy</li>
             <li><strong>Google Play</strong> - For handling in-app purchases</li>
+            <li><strong>Firebase</strong> (opt-in) - Crash diagnostics and basic analytics, if you explicitly enable collection</li>
         </ul>
 
         <h2>6. Children's Privacy</h2>
@@ -156,9 +195,10 @@
         <h2>10. Permissions Explained</h2>
         <p>Unscroll requests the following permissions:</p>
         <ul>
-            <li><strong>Accessibility Service</strong> - Required to detect short-form video content in 6 specific apps (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter) by reading UI labels and button text for pattern matching, then automatically navigating away. All data is analyzed locally in real-time and immediately discarded. This permission monitors ONLY these 6 apps and does NOT record screen content, read passwords/messages, or track activity outside targeted apps.</li>
+            <li><strong>Accessibility Service</strong> - Required to detect short-form video content in 6 specific apps (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter/X) by reading UI labels and button text for pattern matching, then automatically navigating away. All data is analyzed locally in real-time and immediately discarded. This permission monitors ONLY these 6 apps and does NOT record screen content, read passwords/messages, or track activity outside targeted apps.</li>
             <li><strong>Receive Boot Completed</strong> - Allows the app to restart the accessibility service after device reboot (if you had it enabled)</li>
             <li><strong>Internet</strong> - Required to load advertisements from Google AdMob</li>
+            <li><strong>Notifications</strong> - Used to deliver reminders and alerts (Android 13+ prompts at runtime)</li>
         </ul>
         <p><strong>Note:</strong> Unscroll does NOT request or use location, camera, microphone, contacts, SMS, phone, or biometric permissions.</p>
 
@@ -195,7 +235,7 @@
             <h2>Contact Us</h2>
             <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
             <p><strong>Email:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></p>
-            <p><strong>Developer:</strong> Alok Ranjan and Himanshu Ranjan</p>
+            <p><strong>Developer:</strong> Ashish Ranjan, Alok Ranjan and Himanshu Ranjan</p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
         </div>
 
