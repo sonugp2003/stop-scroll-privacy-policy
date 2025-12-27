@@ -68,14 +68,72 @@
         <h1>Privacy Policy for Unscroll</h1>
         <p class="last-updated"><strong>Last Updated:</strong> December 27, 2025</p>
         
+        <div class="highlight" style="background: #fee; border-left-color: #dc2626;">
+            <strong>🔴 IMPORTANT: Personal Information Collection Disclosure</strong>
+            <p><strong>YES, THIS APP COLLECTS AND SHARES PERSONAL INFORMATION.</strong></p>
+            <p>Unscroll collects, uses, and shares personal information as defined by GDPR (Art. 4(1)), CCPA (§1798.140(v)(1)), VCDPA (§59.1-571), CPA (§6-1-1303(17)), LGPD (Art. 5(I)), and other privacy laws. Personal information includes data that relates to an identified or identifiable individual or device.</p>
+            
+            <p><strong>Personal Information Categories We Collect:</strong></p>
+            <ul style="margin-bottom: 5px;">
+                <li>✓ <strong>Device or Other IDs</strong> - Advertising ID (com.google.android.gms.permission.AD_ID), Privacy Sandbox Ad ID (android.permission.ACCESS_ADSERVICES_AD_ID), App Instance ID, FCM Token, Android ID</li>
+                <li>✓ <strong>Device Information</strong> - Model, OS version, screen size, memory, battery, network type</li>
+                <li>✓ <strong>Approximate Location</strong> - Country/region inferred from IP address</li>
+                <li>✓ <strong>Usage Data</strong> - Ad interactions, app events, session duration</li>
+                <li>✓ <strong>Purchase Information</strong> - Transaction IDs, subscription status</li>
+            </ul>
+            
+            <p><strong>Who We Share Data With:</strong></p>
+            <ul style="margin-bottom: 5px;">
+                <li>✓ <strong>Google AdMob</strong> - For advertising (googlesyndication.com, googleadservices.com, doubleclick.net)</li>
+                <li>✓ <strong>Firebase (Google)</strong> - For notifications, configuration, crash reports (opt-in), analytics (opt-in) (firebaseinstallations.googleapis.com, fcm.googleapis.com, etc.)</li>
+                <li>✓ <strong>Google Play</strong> - For in-app purchases (play.googleapis.com)</li>
+            </ul>
+            
+            <p><strong>Your Rights:</strong> Access, correct, delete, opt-out of sale/sharing, data portability. See Section 8 for details.</p>
+        </div>
+        
         <div class="highlight">
             <strong>Quick Summary:</strong> Unscroll helps you stay focused by automatically detecting and blocking short-form video content (YouTube Shorts, Instagram Reels, TikTok, Facebook Reels, Snapchat Spotlight, Twitter/X videos). <strong>We collect and share personal information</strong> including your Advertising ID, device information, and approximate location (inferred from IP address) with Google AdMob for advertising purposes. Crash diagnostics and basic analytics are <strong>disabled by default</strong> and collected only if you <strong>explicitly opt in</strong> in-app. All blocking statistics and preferences stay on your device and are never transmitted.
+        </div>
+        
+        <div class="highlight" style="background: #fef3c7; border-left-color: #f59e0b;">
+            <strong>📋 Android Permissions Requested (15 total):</strong>
+            <p>This app requests the following device permissions:</p>
+            <ul style="margin-bottom: 0; font-size: 0.9em;">
+                <li><strong>ACCESS_ADSERVICES_AD_ID</strong> - Privacy Sandbox Ad ID for advertising</li>
+                <li><strong>ACCESS_ADSERVICES_ATTRIBUTION</strong> - Privacy Sandbox attribution</li>
+                <li><strong>ACCESS_ADSERVICES_TOPICS</strong> - Privacy Sandbox interest topics</li>
+                <li><strong>ACCESS_NETWORK_STATE</strong> - Check internet connectivity</li>
+                <li><strong>AD_ID</strong> - Traditional Google Advertising ID</li>
+                <li><strong>BILLING</strong> - In-app purchases</li>
+                <li><strong>BIND_GET_INSTALL_REFERRER_SERVICE</strong> - Track install source</li>
+                <li><strong>FOREGROUND_SERVICE</strong> - Run content blocking service</li>
+                <li><strong>INTERNET</strong> - Load ads and sync data</li>
+                <li><strong>POST_NOTIFICATIONS</strong> - Send reminders and alerts</li>
+                <li><strong>RECEIVE</strong> - Receive push notifications</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED</strong> - Restart service after reboot</li>
+                <li><strong>VIBRATE</strong> - Vibrate for notifications</li>
+                <li><strong>WAKE_LOCK</strong> - Prevent sleep during tasks</li>
+                <li><strong>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</strong> - Internal security</li>
+            </ul>
+            <p style="margin-bottom: 0;"><strong>See Section 10 for detailed explanations of each permission.</strong></p>
         </div>
 
         <h2>1. Information We Collect</h2>
         <div class="highlight">
             <strong>We Collect Personal Information</strong>
             <p>Unscroll collects and shares certain personal information as defined by privacy laws (GDPR, CCPA, VCDPA, etc.). Personal information includes any data that can be used to identify you or your device, either alone or in combination with other information.</p>
+        </div>
+        
+        <div class="highlight" style="background: #fef3c7; border-left-color: #f59e0b;">
+            <strong>⚠️ Device or Other IDs Collected and Shared</strong>
+            <p>This app collects and shares <strong>Device or Other IDs</strong> with third-party advertising and analytics services. Specifically:</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>Advertising ID</strong> - Shared with Google AdMob for advertising purposes</li>
+                <li><strong>App Instance ID</strong> - Shared with Firebase services for analytics and configuration</li>
+                <li><strong>FCM Registration Token</strong> - Shared with Firebase Cloud Messaging for push notifications</li>
+                <li><strong>Android ID</strong> - May be collected by Google Play Services for device verification</li>
+            </ul>
         </div>
         
         <p>Unscroll integrates <strong>Google AdMob</strong> for ads and optional <strong>Firebase</strong> services. Data collection is limited and compliant with Google policies:</p>
@@ -88,6 +146,17 @@
         </ul>
         
         <p><strong>Personal Information Collected and Transmitted:</strong></p>
+        
+        <p><strong>📱 Device or Other IDs (collected and shared with third parties):</strong></p>
+        <ul>
+            <li><strong>✓ Advertising ID (Google Ad ID)</strong> - A unique, user-resettable identifier for advertising purposes, collected and transmitted to Google AdMob. This is the primary identifier used for personalized ads. You can reset or delete this ID in Settings → Google → Ads.</li>
+            <li><strong>✓ Privacy Sandbox Ad ID</strong> - The new Android Privacy Sandbox advertising identifier (Android 13+), collected and transmitted to Google AdMob as a privacy-preserving replacement for traditional Ad ID.</li>
+            <li><strong>✓ App Instance ID (Firebase Installation ID)</strong> - A unique identifier for your app installation, generated by Firebase and transmitted to Firebase services (Cloud Messaging, Remote Config, Crashlytics if opted in, Analytics if opted in). This ID is used to identify your specific app instance across Firebase services.</li>
+            <li><strong>✓ FCM Registration Token</strong> - A unique token for push notifications, generated by Firebase Cloud Messaging and transmitted to Firebase servers. This token identifies your device for notification delivery.</li>
+            <li><strong>✓ Android ID</strong> - A 64-bit number randomly generated when the device is first set up, may be collected by Google Play Services for device verification and fraud prevention. We do not directly access this ID, but it may be collected by integrated Google SDKs.</li>
+        </ul>
+        
+        <p><strong>📊 Other Personal Information Collected:</strong></p>
         <ul>
             <li><strong>✓ Advertising ID</strong> - A unique identifier assigned to your device by Google, collected and transmitted to Google AdMob for advertising purposes</li>
             <li><strong>✓ Device Information</strong> - Device model, manufacturer, operating system version, screen size, screen density, available memory, storage space, battery level, language settings, network type (WiFi/cellular), carrier name - collected and transmitted to Google AdMob and Firebase</li>
@@ -140,13 +209,35 @@
             <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy & Security</a></li>
             <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Data Collection</a></li>
         </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 25px;">Understanding Device or Other IDs</h3>
+        <p><strong>What are Device or Other IDs?</strong> Device or Other IDs are unique identifiers assigned to your device or app installation. These identifiers are used to:</p>
+        <ul>
+            <li>Deliver personalized advertisements based on your interests (Advertising ID)</li>
+            <li>Track ad performance and measure advertising effectiveness</li>
+            <li>Deliver push notifications to your specific device (FCM Token)</li>
+            <li>Maintain app configuration and settings across app restarts (App Instance ID)</li>
+            <li>Prevent fraud and verify legitimate devices (Android ID via Google Play Services)</li>
+        </ul>
+        
+        <p><strong>Your control over Device IDs:</strong></p>
+        <ul>
+            <li><strong>Advertising ID:</strong> Reset or delete anytime in Settings → Google → Ads → Delete advertising ID (Android 12+) or Reset advertising ID</li>
+            <li><strong>App Instance ID:</strong> Automatically deleted when you uninstall the app</li>
+            <li><strong>FCM Token:</strong> Deleted when you uninstall the app; notifications stop immediately</li>
+            <li><strong>Opt-out of ad personalization:</strong> Settings → Google → Ads → Opt out of Ads Personalization (you'll still see ads, but they won't be personalized)</li>
+        </ul>
+        
+        <p><strong>Important:</strong> These Device IDs are <strong>not permanent</strong> and <strong>do not directly identify you personally</strong> (like your name or email). However, under privacy laws (GDPR, CCPA, VCDPA), they are considered "personal information" because they can be used to track your device's behavior over time.</p>
+
+        <h2>2. Data Stored Locally on Your Device</h2>
         <p>The following data is stored <strong>only on your device</strong> and is <strong>never transmitted to our servers</strong>:</p>
         <ul>
             <li><strong>Blocking statistics</strong> - Count of how many times short-form content was blocked per app</li>
             <li><strong>App preferences</strong> - Which apps you want to block (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter)</li>
             <li><strong>Settings</strong> - Schedule preferences, theme selection, temporary pause state</li>
         </ul>
-        <p><em>Note: We have no backend servers; your data remains on-device.</em></p>
+        <p><em>Note: We have no backend servers; your data remains on-device and is automatically deleted when you uninstall the app.</em></p>
 
         <h2>3. How We Use Information</h2>
         <p>Information collected is used for:</p>
@@ -228,6 +319,8 @@
         <h2>5. Data Sharing</h2>
         <p>We <strong>do not sell</strong> your personal data to third parties for monetary consideration.</p>
         
+        <p><strong>Important:</strong> For a complete list of network endpoints and domains that receive your data, see Section 5.1 below.</p>
+        
         <p><strong>Data is automatically shared with the following service providers:</strong></p>
         <ul>
             <li><strong>Google AdMob</strong> - Advertising ID, device information, approximate location, ad interaction data — shared automatically for advertising, ad measurement, and monetization</li>
@@ -244,16 +337,212 @@
         
         <p><strong>Note on "Sharing" vs "Selling":</strong> Under some privacy laws (CCPA, VCDPA, etc.), sharing data with advertising networks like AdMob for targeted advertising may be considered "sharing" or "selling" even though we receive no monetary payment for your data. You can opt-out of this sharing as described in Section 8.</p>
 
+        <h2>5.1. Network Endpoints and Data Transmission</h2>
+        <div class="highlight">
+            <strong>Where Your Data is Transmitted</strong>
+            <p>This section discloses all network domains and endpoints that Unscroll transmits your personal information to. All data transmission uses encrypted HTTPS connections.</p>
+        </div>
+        
+        <p><strong>Google Advertising Services (AdMob):</strong></p>
+        <ul>
+            <li><strong>googlesyndication.com</strong> - Ad serving and ad content delivery</li>
+            <li><strong>googleadservices.com</strong> - Ad measurement, conversion tracking, and attribution</li>
+            <li><strong>doubleclick.net</strong> - Ad serving and real-time bidding</li>
+            <li><strong>admob.com</strong> - AdMob SDK communication and ad requests</li>
+            <li><strong>adservice.google.com</strong> - Privacy Sandbox ad services (Android 13+)</li>
+            <li><strong>Data transmitted:</strong> Advertising ID, Privacy Sandbox Ad ID, device information, approximate location, ad interaction data, app context</li>
+        </ul>
+        
+        <p><strong>Firebase Services (Google):</strong></p>
+        <ul>
+            <li><strong>firebaseinstallations.googleapis.com</strong> - Firebase Installations API for managing app instance identifiers and authentication tokens. This endpoint is used to generate, retrieve, and manage your app's Firebase Installation ID (App Instance ID).</li>
+            <li><strong>fcmtoken.googleapis.com / fcm.googleapis.com</strong> - Firebase Cloud Messaging for push notification delivery and FCM token management</li>
+            <li><strong>firebaseremoteconfig.googleapis.com</strong> - Firebase Remote Config for retrieving app configuration and feature flags</li>
+            <li><strong>firebaselogging.googleapis.com / app-measurement.com</strong> - Firebase Analytics event logging (only if you opt in to analytics)</li>
+            <li><strong>firebasecrashlytics.googleapis.com / crashlyticsreports-pa.googleapis.com</strong> - Firebase Crashlytics crash report upload (only if you opt in to crash reporting)</li>
+            <li><strong>firebasestorage.googleapis.com</strong> - Firebase Storage (used internally by Firebase SDKs for configuration caching)</li>
+            <li><strong>Data transmitted:</strong> App Instance ID (Firebase Installation ID), FCM registration token, device information, app version, crash reports (if opted in), analytics events (if opted in)</li>
+        </ul>
+        
+        <p><strong>Google Play Services:</strong></p>
+        <ul>
+            <li><strong>play.googleapis.com</strong> - Google Play Services APIs for device verification and service communication</li>
+            <li><strong>android.clients.google.com</strong> - Google Play Services device check-in and configuration</li>
+            <li><strong>Data transmitted:</strong> Android ID (via Google Play Services), device configuration, app package information</li>
+        </ul>
+        
+        <p><strong>Google Play Billing:</strong></p>
+        <ul>
+            <li><strong>play.google.com</strong> - In-app purchase processing and subscription management</li>
+            <li><strong>payments.google.com</strong> - Payment processing (handled securely by Google Play - we never see payment details)</li>
+            <li><strong>Data transmitted:</strong> Purchase tokens, transaction IDs, product IDs, subscription status</li>
+        </ul>
+        
+        <p><strong>Google User Messaging Platform (UMP):</strong></p>
+        <ul>
+            <li><strong>fundingchoicesmessages.google.com</strong> - Consent dialog delivery for GDPR/CCPA compliance</li>
+            <li><strong>Data transmitted:</strong> Consent choices, device information for consent management</li>
+        </ul>
+        
+        <p><strong>Important Disclosures:</strong></p>
+        <ul>
+            <li>✅ All data transmission uses <strong>encrypted HTTPS/TLS connections</strong> to protect data in transit</li>
+            <li>✅ We do <strong>not operate our own backend servers</strong> - all data is transmitted directly to Google's services</li>
+            <li>✅ Google services may use <strong>additional subdomains or regional endpoints</strong> (e.g., europe-west1.firebaseinstallations.googleapis.com) based on your location</li>
+            <li>✅ <strong>Crash reports and analytics</strong> are transmitted ONLY if you explicitly enable them in Settings → Privacy & Data</li>
+            <li>✅ You can <strong>block these endpoints</strong> using firewall apps, but this will break app functionality (ads won't load, notifications won't work, purchases will fail)</li>
+            <li>✅ Google may update or add new endpoints - refer to <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a> and <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> for the most current list</li>
+        </ul>
+        
+        <p><strong>Why firebaseinstallations.googleapis.com is accessed:</strong> This endpoint is contacted automatically when you first launch the app and periodically thereafter to:</p>
+        <ul>
+            <li>Generate a unique Firebase Installation ID (App Instance ID) for your app installation</li>
+            <li>Authenticate your app with Firebase services</li>
+            <li>Enable Firebase Cloud Messaging for push notifications</li>
+            <li>Retrieve app configuration from Firebase Remote Config</li>
+            <li>Coordinate between different Firebase services (Analytics, Crashlytics, Messaging)</li>
+        </ul>
+        <p>This is a standard Firebase SDK endpoint and is required for Firebase services to function. The Installation ID generated is unique to your app installation and is deleted when you uninstall the app.</p>
+
         <h2>6. Children's Privacy</h2>
         <p>Unscroll is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us.</p>
 
         <h2>7. Data Security</h2>
         <p>We take data security seriously:</p>
         <ul>
-            <li>All data transmitted to AdMob is <strong>encrypted in transit</strong> using HTTPS</li>
+            <li>All data transmitted to AdMob and Firebase is <strong>encrypted in transit</strong> using HTTPS/TLS</li>
             <li>Local data on your device is protected by Android's app sandboxing</li>
             <li>We recommend using device encryption and screen lock for additional security</li>
+            <li>Google's services employ industry-standard security measures including encryption at rest and access controls</li>
         </ul>
+
+        <h2>7.1. International Data Transfers</h2>
+        <div class="highlight">
+            <strong>Your data may be transferred and processed internationally</strong>
+            <p>Unscroll uses Google services (AdMob, Firebase, Google Play) which operate globally. Your personal information may be transferred to and processed in countries outside your country of residence, including the United States and other countries where Google maintains data centers.</p>
+        </div>
+        
+        <p><strong>How we protect your data during international transfers:</strong></p>
+        <ul>
+            <li><strong>Encryption:</strong> All data is encrypted in transit using HTTPS/TLS and at rest on Google's servers</li>
+            <li><strong>Standard Contractual Clauses (SCCs):</strong> Google uses EU-approved Standard Contractual Clauses for transfers from the EEA/UK to countries without adequacy decisions</li>
+            <li><strong>Google's Certifications:</strong> Google complies with ISO 27001, ISO 27018, SOC 2/3, and other international security standards</li>
+            <li><strong>Data Processing Agreements:</strong> Google acts as a data processor under GDPR with appropriate safeguards</li>
+        </ul>
+        
+        <p><strong>For EU/EEA and UK residents:</strong> Google has implemented appropriate safeguards for data transfers, including Standard Contractual Clauses approved by the European Commission. For more details, see <a href="https://policies.google.com/privacy/frameworks" target="_blank">Google's EU Data Transfer Framework</a>.</p>
+        
+        <p><strong>Data locations:</strong> Your data may be stored and processed in any country where Google operates data centers, including but not limited to: United States, Belgium, Finland, Netherlands, Taiwan, Chile, and other regions. Google automatically routes data to the nearest data center for optimal performance.</p>
+
+        <h2>7.2. GDPR Rights for EU/EEA and UK Residents</h2>
+        <div class="highlight">
+            <strong>Your Rights Under the General Data Protection Regulation (GDPR)</strong>
+            <p>If you are located in the European Union (EU), European Economic Area (EEA), or United Kingdom (UK), you have specific rights under the GDPR.</p>
+        </div>
+        
+        <p><strong>Legal Basis for Processing Your Personal Data:</strong></p>
+        <ul>
+            <li><strong>Consent (GDPR Art. 6(1)(a)):</strong> For advertising personalization (via UMP consent dialog), optional crash reports, and optional analytics. You can withdraw consent anytime in device settings or app settings.</li>
+            <li><strong>Contractual Necessity (GDPR Art. 6(1)(b)):</strong> To provide the app's core functionality, process in-app purchases, and deliver notifications you've requested.</li>
+            <li><strong>Legitimate Interests (GDPR Art. 6(1)(f)):</strong> To maintain app security, prevent fraud, and improve app performance. We balance our interests with your privacy rights.</li>
+        </ul>
+        
+        <p><strong>Your GDPR Rights:</strong></p>
+        <ul>
+            <li><strong>Right to Access (Art. 15):</strong> Obtain confirmation of whether we process your personal data and receive a copy (see Section 8)</li>
+            <li><strong>Right to Rectification (Art. 16):</strong> Request correction of inaccurate or incomplete personal data (see Section 8)</li>
+            <li><strong>Right to Erasure / "Right to be Forgotten" (Art. 17):</strong> Request deletion of your personal data in certain circumstances (see Section 8)</li>
+            <li><strong>Right to Restriction of Processing (Art. 18):</strong> Request limitation of processing in certain circumstances (contact us at un0scroll@gmail.com)</li>
+            <li><strong>Right to Data Portability (Art. 20):</strong> Receive your personal data in a structured, commonly used, machine-readable format and transmit it to another controller</li>
+            <li><strong>Right to Object (Art. 21):</strong> Object to processing based on legitimate interests or for direct marketing purposes (opt-out of personalized ads in device settings)</li>
+            <li><strong>Right to Withdraw Consent (Art. 7(3)):</strong> Withdraw consent for advertising personalization, crash reports, or analytics at any time without affecting the lawfulness of processing before withdrawal</li>
+            <li><strong>Right Not to be Subject to Automated Decision-Making (Art. 22):</strong> See Section 7.3 below</li>
+        </ul>
+        
+        <p><strong>How to Exercise Your GDPR Rights:</strong></p>
+        <ul>
+            <li>Email: <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> with subject "GDPR Request"</li>
+            <li>Specify which right you're exercising and provide necessary identity verification information</li>
+            <li>We will respond within <strong>1 month</strong> (extendable by 2 months for complex requests)</li>
+        </ul>
+        
+        <p><strong>Supervisory Authority:</strong> You have the right to lodge a complaint with your local data protection authority if you believe we have violated your GDPR rights:</p>
+        <ul>
+            <li><strong>EU/EEA:</strong> Find your local Data Protection Authority at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank">EDPB Member List</a></li>
+            <li><strong>UK:</strong> Information Commissioner's Office (ICO) - <a href="https://ico.org.uk/make-a-complaint/" target="_blank">https://ico.org.uk/make-a-complaint/</a></li>
+        </ul>
+
+        <h2>7.3. Automated Decision-Making and Profiling</h2>
+        <div class="highlight">
+            <strong>We do not engage in automated decision-making with legal or similarly significant effects</strong>
+            <p>Under GDPR Article 22, you have the right not to be subject to decisions based solely on automated processing, including profiling, which produce legal effects or similarly significantly affect you.</p>
+        </div>
+        
+        <p><strong>Our practices:</strong></p>
+        <ul>
+            <li><strong>✅ No automated decisions:</strong> We do not make automated decisions about you that have legal or similarly significant effects (e.g., automatic denial of service, credit decisions, employment decisions)</li>
+            <li><strong>✅ No profiling for legal effects:</strong> While Google AdMob may create interest profiles for advertising purposes, this does not produce legal effects or similarly significantly affect you</li>
+            <li><strong>Ad personalization:</strong> Google AdMob uses automated processing to show personalized ads based on your interests, but you can opt-out anytime (Settings → Google → Ads → Opt out of Ads Personalization)</li>
+            <li><strong>Privacy Sandbox:</strong> The Privacy Sandbox Topics API categorizes your interests on-device using automated processing, but these categories are broad (e.g., "Sports", "Technology") and do not produce legal effects</li>
+        </ul>
+        
+        <p><strong>Important:</strong> If in the future we implement any automated decision-making that produces legal or similarly significant effects, we will notify you and provide you with the right to obtain human intervention, express your point of view, and contest the decision.</p>
+
+        <h2>7.4. Do Not Track (DNT) Signals</h2>
+        <p><strong>Browser "Do Not Track" Signals:</strong> Unscroll is a native Android app and does not use web browsers or cookies within the app. Therefore, browser-based Do Not Track (DNT) signals do not apply.</p>
+        
+        <p><strong>Global Privacy Control (GPC):</strong> We recognize and respect Global Privacy Control (GPC) signals. If your browser or device sends a GPC signal (supported by some privacy-focused browsers on Android), we will treat it as a valid opt-out request for the sale/sharing of your personal information for targeted advertising purposes.</p>
+        
+        <p><strong>Device-level privacy controls:</strong> Android provides device-level privacy controls that are more relevant for mobile apps:</p>
+        <ul>
+            <li><strong>Opt out of Ads Personalization</strong> - Settings → Google → Ads → Opt out of Ads Personalization</li>
+            <li><strong>Delete Advertising ID</strong> - Settings → Privacy → Ads → Delete advertising ID (Android 12+)</li>
+            <li><strong>Privacy Dashboard</strong> - Settings → Privacy → Privacy Dashboard (Android 12+) shows which apps access your data</li>
+        </ul>
+
+        <h2>7.5. Business Transitions (Merger, Acquisition, or Sale)</h2>
+        <div class="highlight">
+            <strong>What happens to your data if Unscroll is sold or merged</strong>
+            <p>In the event of a merger, acquisition, sale of assets, bankruptcy, or other business transition involving Unscroll, your personal information may be transferred to the acquiring entity or successor.</p>
+        </div>
+        
+        <p><strong>Our commitments:</strong></p>
+        <ul>
+            <li>✅ <strong>Prior notice:</strong> We will notify you via email (if we have it) or prominent in-app notification before your personal information is transferred and becomes subject to a different privacy policy</li>
+            <li>✅ <strong>Same protections:</strong> We will require the acquiring entity to honor the commitments made in this Privacy Policy for data collected before the transition</li>
+            <li>✅ <strong>Your rights remain:</strong> You will retain all privacy rights described in this policy, including the right to deletion, access, and opt-out</li>
+            <li>✅ <strong>Opt-out option:</strong> If you do not agree with the new privacy practices, you can delete your account and uninstall the app before the transition takes effect</li>
+        </ul>
+        
+        <p><strong>What data would be transferred:</strong> Local app data (blocking statistics, preferences) remains on your device and is not transferred. Only data held by our service providers (Google AdMob, Firebase) would be affected, and Google's own privacy policies continue to apply to that data.</p>
+
+        <h2>7.6. Government and Legal Requests</h2>
+        <div class="highlight">
+            <strong>When we may disclose your information to government authorities</strong>
+            <p>We may disclose your personal information to government authorities, law enforcement, or other third parties if required by law or in response to valid legal processes.</p>
+        </div>
+        
+        <p><strong>Circumstances where we may disclose data:</strong></p>
+        <ul>
+            <li><strong>Legal obligations:</strong> To comply with applicable laws, regulations, legal processes, or enforceable governmental requests</li>
+            <li><strong>Court orders and subpoenas:</strong> In response to valid court orders, warrants, or subpoenas</li>
+            <li><strong>Law enforcement requests:</strong> To respond to lawful requests from law enforcement agencies</li>
+            <li><strong>Protection of rights:</strong> To enforce our Terms of Service, investigate potential violations, or protect the rights, property, or safety of Unscroll, our users, or the public</li>
+            <li><strong>Fraud prevention:</strong> To detect, prevent, or address fraud, security, or technical issues</li>
+            <li><strong>National security:</strong> To comply with national security or law enforcement requirements to the extent permitted by law</li>
+        </ul>
+        
+        <p><strong>Our practices:</strong></p>
+        <ul>
+            <li>✅ We will <strong>review each request</strong> for legal sufficiency and may challenge or narrow overly broad requests</li>
+            <li>✅ We will <strong>disclose only the minimum</strong> amount of information necessary to comply with the request</li>
+            <li>✅ We will <strong>notify you</strong> of legal requests for your data unless legally prohibited (e.g., by gag order)</li>
+            <li>✅ We will <strong>publish transparency reports</strong> if we receive a significant number of government requests (currently we have received zero requests)</li>
+        </ul>
+        
+        <p><strong>Important limitation:</strong> Because we do not operate our own backend servers and most data is stored locally on your device or managed by Google's services, we have very limited access to your personal data. Most government requests would need to be directed to Google for data held by AdMob, Firebase, or Google Play services.</p>
+        
+        <p><strong>Transparency:</strong> As of the last update of this policy (December 27, 2025), we have <strong>received zero</strong> government requests, court orders, or law enforcement requests for user data.</p>
 
         <h2>8. Your Rights & Choices</h2>
         <p>You have the following rights:</p>
@@ -548,11 +837,12 @@
 
         <p><strong>Categories of Personal Information We Collect (CCPA disclosure):</strong></p>
         <ul>
-            <li><strong>Identifiers</strong> - Advertising ID (collected by AdMob)</li>
-            <li><strong>Commercial Information</strong> - In-app purchase history (collected by Google Play)</li>
-            <li><strong>Internet/Network Activity</strong> - Ad interaction data, app usage (collected by AdMob; analytics opt-in only)</li>
-            <li><strong>Geolocation Data (Approximate)</strong> - Inferred from IP address by AdMob (not collected directly by us)</li>
-            <li><strong>Inference Data</strong> - Preferences inferred from app behavior (stored locally on device)</li>
+            <li><strong>Identifiers (including Device or Other IDs)</strong> - Advertising ID (traditional and Privacy Sandbox), App Instance ID, FCM Registration Token, Android ID (collected by Google Play Services), installation referrer</li>
+            <li><strong>Commercial Information</strong> - In-app purchase history, transaction IDs, subscription status (collected by Google Play Billing)</li>
+            <li><strong>Internet/Network Activity</strong> - Ad interaction data (views, clicks, impressions), app usage events, screen views, feature usage, session duration (collected by AdMob; full analytics opt-in only)</li>
+            <li><strong>Device Information</strong> - Device model, manufacturer, OS version, screen size/density, available memory, storage space, battery level, language, network type, carrier name</li>
+            <li><strong>Geolocation Data (Approximate)</strong> - Country, region, city inferred from IP address by AdMob (we do not collect precise GPS location)</li>
+            <li><strong>Inference Data</strong> - User preferences and interests inferred from app behavior and ad interactions (stored locally on device; interest topics may be shared via Privacy Sandbox)</li>
         </ul>
 
         <p><strong>Business/Commercial Purposes for Collection:</strong></p>
@@ -625,14 +915,58 @@
         <p>Continued use of the app after changes indicates acceptance of the updated policy.</p>
 
         <h2>10. Permissions Explained</h2>
-        <p>Unscroll requests the following permissions:</p>
+        <p>Unscroll requests the following Android permissions. Each permission is used for specific functionality as explained below:</p>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">Core Functionality Permissions:</h3>
         <ul>
-            <li><strong>Accessibility Service</strong> - Required to detect short-form video content in 6 specific apps (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter/X) by reading UI labels and button text for pattern matching, then automatically navigating away. All data is analyzed locally in real-time and immediately discarded. This permission monitors ONLY these 6 apps and does NOT record screen content, read passwords/messages, or track activity outside targeted apps.</li>
-            <li><strong>Receive Boot Completed</strong> - Allows the app to restart the accessibility service after device reboot (if you had it enabled)</li>
-            <li><strong>Internet</strong> - Required to load advertisements from Google AdMob</li>
-            <li><strong>Notifications</strong> - Used to deliver reminders and alerts (Android 13+ prompts at runtime)</li>
+            <li><strong>Accessibility Service (android.permission.BIND_ACCESSIBILITY_SERVICE)</strong> - Required to detect short-form video content in 6 specific apps (YouTube, Instagram, TikTok, Facebook, Snapchat, Twitter/X) by reading UI labels and button text for pattern matching, then automatically navigating away. All data is analyzed locally in real-time and immediately discarded. This permission monitors ONLY these 6 apps and does NOT record screen content, read passwords/messages, or track activity outside targeted apps.</li>
+            <li><strong>Internet (android.permission.INTERNET)</strong> - Required to load advertisements from Google AdMob, download app configuration updates from Firebase Remote Config, send crash reports (if opted in), and sync premium purchase status. Without this permission, the app cannot display ads or verify purchases.</li>
+            <li><strong>Access Network State (android.permission.ACCESS_NETWORK_STATE)</strong> - Allows the app to check if you have an active internet connection before attempting to load ads or sync data. This prevents unnecessary battery drain and improves user experience by handling offline states gracefully.</li>
         </ul>
-        <p><strong>Note:</strong> Unscroll does NOT request or use location, camera, microphone, contacts, SMS, phone, or biometric permissions.</p>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">Advertising & Monetization Permissions:</h3>
+        <ul>
+            <li><strong>AD_ID (com.google.android.gms.permission.AD_ID)</strong> - Allows Google AdMob to access your Advertising ID for personalized ads. This is the traditional advertising identifier used by Google Play Services. You can opt out of personalized ads or reset this ID in your device settings (Settings → Google → Ads).</li>
+            <li><strong>Access AdServices Ad ID (android.permission.ACCESS_ADSERVICES_AD_ID)</strong> - Allows access to the Privacy Sandbox Ad ID, which is Google's new privacy-preserving advertising framework (Android 13+). This replaces the traditional Advertising ID with more privacy-friendly alternatives. Data stays on-device longer and is shared with fewer details.</li>
+            <li><strong>Access AdServices Attribution (android.permission.ACCESS_ADSERVICES_ATTRIBUTION)</strong> - Enables Privacy Sandbox attribution reporting to measure ad effectiveness without cross-app tracking. This allows advertisers to know if their ads led to app usage, but without sharing your identity or detailed behavior.</li>
+            <li><strong>Access AdServices Topics (android.permission.ACCESS_ADSERVICES_TOPICS)</strong> - Allows access to the Privacy Sandbox Topics API for interest-based advertising. Instead of tracking you across apps, this API categorizes your interests on-device (e.g., "Sports", "Technology") and shares only broad topics with advertisers, providing more privacy than traditional tracking.</li>
+            <li><strong>Bind Get Install Referrer Service (com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE)</strong> - Allows the app to determine where you installed it from (e.g., Google Play Store, web link, ad campaign). This helps us understand which marketing channels are effective. Only the referral source is collected, not your personal information.</li>
+        </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">Notifications & Background Service Permissions:</h3>
+        <ul>
+            <li><strong>Post Notifications (android.permission.POST_NOTIFICATIONS)</strong> - Allows the app to send you notifications and reminders (Android 13+). This permission is requested at runtime, and you can deny it if you don't want notifications. Used for blocking reminders, milestone celebrations, and feature announcements. You can disable notifications anytime in Settings → Notifications.</li>
+            <li><strong>Receive (com.google.android.c2dm.permission.RECEIVE)</strong> - Allows the app to receive push notifications via Firebase Cloud Messaging (FCM). This is required for the app to receive remote notifications from Firebase servers (e.g., feature announcements, important updates). No personal messages are sent.</li>
+            <li><strong>Receive Boot Completed (android.permission.RECEIVE_BOOT_COMPLETED)</strong> - Allows the app to restart the accessibility service automatically after device reboot (only if you had it enabled before reboot). This ensures continuous protection without manual re-enabling. If you don't want this, you can disable the accessibility service entirely.</li>
+            <li><strong>Foreground Service (android.permission.FOREGROUND_SERVICE)</strong> - Allows the app to run a foreground service for continuous content blocking. This ensures the accessibility service remains active and isn't killed by Android's battery optimization. A persistent notification is shown when the service is active (required by Android for transparency).</li>
+            <li><strong>Wake Lock (android.permission.WAKE_LOCK)</strong> - Allows the app to keep the device awake temporarily when processing certain tasks (e.g., syncing premium status, updating configuration). This prevents the device from sleeping mid-sync, which could cause incomplete operations. Wake locks are released immediately after the task completes.</li>
+            <li><strong>Vibrate (android.permission.VIBRATE)</strong> - Allows notifications to vibrate your device for alerts. This enhances notification visibility. You can disable vibration in your device's notification settings.</li>
+        </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">Purchase & Billing Permissions:</h3>
+        <ul>
+            <li><strong>Billing (com.android.vending.BILLING)</strong> - Required for in-app purchases and premium subscription management through Google Play Billing. This permission allows the app to communicate with Google Play to process purchases, verify subscriptions, and restore purchases across devices. All payment processing is handled securely by Google Play—we never see your credit card or payment information.</li>
+        </ul>
+        
+        <h3 style="color: #1e40af; font-size: 1.1em; margin-top: 20px;">Internal/System Permissions:</h3>
+        <ul>
+            <li><strong>Dynamic Receiver Not Exported Permission (com.stopscroll.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION)</strong> - An internal permission declared by the app to secure broadcast receivers (Android 13+ requirement). This prevents other apps from sending fake broadcasts to Unscroll, improving security. This is a security best practice and does not collect or share any data.</li>
+        </ul>
+        
+        <p><strong>Permissions We Do NOT Request:</strong></p>
+        <ul>
+            <li>❌ <strong>Location</strong> (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_BACKGROUND_LOCATION) - We do not request or use any location permissions. Approximate location is inferred by AdMob from IP address, but we never directly access GPS or location services.</li>
+            <li>❌ <strong>Camera</strong> (CAMERA) - No camera access requested or needed</li>
+            <li>❌ <strong>Microphone</strong> (RECORD_AUDIO) - No audio recording requested or needed</li>
+            <li>❌ <strong>Contacts</strong> (READ_CONTACTS, WRITE_CONTACTS) - No contact access requested or needed</li>
+            <li>❌ <strong>Phone</strong> (CALL_PHONE, READ_PHONE_STATE, READ_CALL_LOG) - No phone-related permissions requested</li>
+            <li>❌ <strong>SMS</strong> (SEND_SMS, READ_SMS, RECEIVE_SMS) - No SMS permissions requested</li>
+            <li>❌ <strong>Storage</strong> (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE) - No access to photos, videos, or files</li>
+            <li>❌ <strong>Calendar</strong> (READ_CALENDAR, WRITE_CALENDAR) - No calendar access requested</li>
+            <li>❌ <strong>Biometric</strong> (USE_BIOMETRIC, USE_FINGERPRINT) - No biometric authentication used</li>
+        </ul>
+        
+        <p><strong>Managing Permissions:</strong> You can review and manage app permissions anytime by going to your device Settings → Apps → Unscroll → Permissions. You can revoke any permission (except Accessibility Service, which must be disabled in Settings → Accessibility), though some features may stop working without required permissions.</p>
 
         <h2>11. Accessibility Service Transparency</h2>
         <p>Unscroll uses Android's <strong>AccessibilityService API</strong> solely for content blocking. Here's exactly what it does:</p>
