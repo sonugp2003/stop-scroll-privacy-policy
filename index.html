@@ -948,49 +948,69 @@
         </ul>
         <p>This is a standard Firebase SDK endpoint and is required for Firebase services to function. The Installation ID generated is unique to your app installation and is deleted when you uninstall the app.</p>
 
-        <h2>6. Children's Privacy (COPPA Compliance)</h2>
+        <h2>6. Children’s Data & Caregiver Rights (COPPA Compliance)</h2>
         
-        <div class="highlight" style="background: #eff6ff; border-left-color: #2563eb; padding: 20px; margin-bottom: 20px;">
-            <strong style="font-size: 1.2em;">👨‍👩‍👧 PARENTAL RIGHTS UNDER COPPA - SUMMARY</strong>
-            <p style="margin: 10px 0;">Under the Children's Online Privacy Protection Act (COPPA) and other applicable privacy laws, parents, guardians, and caregivers of children under 13 have the following rights:</p>
-            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95em;">
-                <thead>
-                    <tr style="background: #dbeafe;">
-                        <th style="padding: 10px; border: 1px solid #93c5fd; text-align: left;">Your Right</th>
-                        <th style="padding: 10px; border: 1px solid #93c5fd; text-align: left;">Description</th>
-                        <th style="padding: 10px; border: 1px solid #93c5fd; text-align: left;">How to Exercise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;"><strong>✅ Right to Review</strong></td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">You have the right to review and obtain a copy of any personal information we have collected from your child</td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">Email: un0scroll@gmail.com<br>Subject: "COPPA Data Access Request"</td>
-                    </tr>
-                    <tr style="background: #eff6ff;">
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;"><strong>✅ Right to Deletion</strong></td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">You have the right to request deletion of any personal information we have collected from your child</td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">Email: un0scroll@gmail.com<br>Subject: "COPPA Deletion Request"</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;"><strong>✅ Right to Stop Collection</strong></td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">You have the right to request that we stop collecting personal information from your child</td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">Email: un0scroll@gmail.com<br>Subject: "COPPA Opt-Out Request"</td>
-                    </tr>
-                    <tr style="background: #eff6ff;">
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;"><strong>✅ Right to Refuse Consent</strong></td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">You have the right to refuse to permit further collection or use of your child's information</td>
-                        <td style="padding: 10px; border: 1px solid #bfdbfe;">Uninstall app or email us</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="margin: 10px 0 0 0;"><strong>Contact:</strong> Email: <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> | Phone: +91 7488256944 | Address: Hajipur, Bihar 844101, India<br><strong>Response Time:</strong> We acknowledge all requests within 48 hours and fulfill them within 30 days.</p>
+        <div class="highlight" style="background: #f8fafc; border-left-color: #64748b; margin-bottom: 20px;">
+            <p style="margin-top: 0;"><strong>General Audience Notice:</strong> Unscroll is a general-audience app and is not primarily directed to children under 13. Because the app may be used by children under parental supervision (for example, on a family device), this section explains how children’s data may be handled and the rights caregivers have under COPPA and similar laws.</p>
+
+            <h3>Children's data collection</h3>
+            <p>We do not knowingly collect personal information from children under 13. However, if a child uses Unscroll, certain information may be collected automatically by the third-party services we use (Google AdMob, Firebase, and Google Play) to provide ads, notifications, configuration updates, and purchases.</p>
+
+            <h3>What children's data you collect</h3>
+            <p>If a child uses Unscroll, the types of data that may be collected (primarily by Google services) can include:</p>
+            <ul>
+                <li><strong>Device or other IDs:</strong> Advertising ID (or Privacy Sandbox Ad ID), Firebase Installation ID (App Instance ID), and FCM token (for notifications).</li>
+                <li><strong>Device information:</strong> device model/manufacturer, OS version, language, network type, and app version.</li>
+                <li><strong>Approximate location:</strong> country/region inferred from IP address by Google (we do not collect precise GPS location).</li>
+                <li><strong>Ad interaction data:</strong> ad impressions/clicks and related measurement signals when ads are shown.</li>
+                <li><strong>Purchase information:</strong> transaction/product identifiers if an in-app purchase is made (payment details are handled by Google Play; we do not receive card data).</li>
+            </ul>
+            <p style="margin-bottom: 0;"><strong>We do not ask children to provide direct identifiers</strong> like name, email, phone number, precise address, photos, contacts, or messages. Blocking statistics and preferences are stored locally on the device and are not transmitted to us.</p>
+
+            <h3>How you use children's data</h3>
+            <p>We use the information described above only to operate and secure the app, including to:</p>
+            <ul>
+                <li>serve and measure ads (and, if we become aware a user is under 13, we will take steps to serve only non-personalized ads where applicable, such as enabling AdMob age/under-consent flags);</li>
+                <li>deliver push notifications and important updates (if notifications are enabled);</li>
+                <li>retrieve app configuration updates via Firebase Remote Config;</li>
+                <li>prevent fraud and keep services secure; and</li>
+                <li>process and restore in-app purchases.</li>
+            </ul>
+            <p style="margin-bottom: 0;">We do not use children’s data for profiling that produces legal or similarly significant effects. We do not knowingly use children’s data for interest-based targeting, and we do not knowingly build interest profiles about children.</p>
+
+            <h3>How you share children's data</h3>
+            <p>We share data only with the service providers needed to run the app:</p>
+            <ul>
+                <li><strong>Google AdMob</strong> (ads and ad measurement)</li>
+                <li><strong>Firebase</strong> (Cloud Messaging and Remote Config; Analytics/Crashlytics only if you opt in, where applicable)</li>
+                <li><strong>Google Play</strong> (billing and purchase verification)</li>
+            </ul>
+            <p style="margin-bottom: 0;">We do not sell children’s personal information. We do not share children’s data with third parties for their own direct marketing purposes.</p>
+
+            <h3>Publication of children's data</h3>
+            <p style="margin-bottom: 0;">Unscroll does not provide social features (profiles, public posts, messaging, forums, or user-generated content). The app does not allow children to publicly publish personal information through the app, and we do not publish children’s personal information.</p>
+
+            <h3>Exercising caregiver's right to delete</h3>
+            <p>Parents/guardians can request deletion of a child’s personal information by emailing <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> with the subject <strong>"Child Data Request – Delete"</strong>. Please include the device model, Android version, approximate install date, and (if available) the Advertising ID (Settings → Google → Ads). You can also uninstall the app to immediately delete all locally stored data.</p>
+
+            <h3>Exercising caregiver's access rights</h3>
+            <p>Parents/guardians can request access to (review) a child’s personal information by emailing <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> with the subject <strong>"Child Data Request – Access"</strong> and including the device details above. Because we do not operate backend servers, most data is held by Google services; we will provide the information we can reasonably identify and guide you to Google’s tools for any Google-held data.</p>
+
+            <h3>Exercising caregiver's right to stop collection/use</h3>
+            <p>Parents/guardians can request that we stop further collection or use of a child’s personal information by (i) uninstalling Unscroll, (ii) disabling internet access for the app, and/or (iii) deleting/resetting the Advertising ID in Android settings. You may also email <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> with the subject <strong>"Child Data Request – Stop Collection"</strong>.</p>
+
+            <h3>Explaining caregiver's right to delete</h3>
+            <p>Caregivers have the right to request deletion of the child’s personal information that we can reasonably identify in connection with the device/app instance. Uninstalling the app deletes local data immediately. For data held by Google (AdMob/Firebase/Play), we will submit deletion requests where feasible; deletion timelines are controlled by Google’s retention policies and legal obligations.</p>
+
+            <h3>Explaining caregiver's right to review</h3>
+            <p>Caregivers have the right to review the child’s personal information that we collect or maintain. Because Unscroll stores blocking statistics locally on the device and does not keep user accounts, the amount of data we can directly provide is limited. We will still respond with what we can reasonably identify and explain how to access or manage Google-held data.</p>
+
+            <h3>Explaining caregiver's right to stop collection/use</h3>
+            <p style="margin-bottom: 0;">Caregivers have the right to request that we stop further collection or use of the child’s personal information. The fastest way to stop future collection is to uninstall the app and/or use Android’s privacy controls (e.g., opt out of ads personalization, delete the Advertising ID). We may request reasonable proof of caregiver status to protect the child’s privacy, and we aim to respond to child data requests within 30 days.</p>
         </div>
-        
         <div class="highlight" style="background: #fee; border-left-color: #dc2626; padding: 20px; margin-bottom: 20px;">
-            <strong style="font-size: 1.1em;">🔴 PARENTS/CAREGIVERS: YOUR RIGHT TO DELETE YOUR CHILD'S DATA</strong>
-            <p style="margin: 10px 0;"><strong>You have the right under COPPA (Children's Online Privacy Protection Act) and other privacy laws to request the deletion of any personal information we have collected from your child under 13.</strong> This right allows you to have your child's personal information permanently removed from our systems and from the systems of our third-party service providers.</p>
-            <p style="margin: 10px 0;"><strong>To exercise your right to request deletion of your child's personal information:</strong></p>
+            <strong style="font-size: 1.1em;">🔴 PARENTS/CAREGIVERS: HOW TO DELETE YOUR CHILD'S DATA</strong>
+            <p style="margin: 10px 0;"><strong>To request deletion of your child's personal information:</strong></p>
             <ol style="margin-bottom: 10px;">
                 <li><strong>Email us at:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></li>
                 <li><strong>Subject line:</strong> "COPPA Deletion Request - Child's Data"</li>
@@ -998,63 +1018,6 @@
             </ol>
             <p style="margin: 10px 0;"><strong>Or for immediate deletion:</strong> Uninstall the app from your child's device (deletes all local data instantly), then email us to delete data from third-party services.</p>
             <p style="margin: 0;"><strong>Response time:</strong> We acknowledge within 48 hours and complete deletion within 30 days. <strong>Phone:</strong> +91 7488256944 | <strong>Address:</strong> Hajipur, Bihar 844101, India</p>
-        </div>
-        
-        <div class="highlight" style="background: #f0fdf4; border-left-color: #10b981; padding: 20px; margin-bottom: 20px;">
-            <strong style="font-size: 1.1em;">📋 PARENTS/CAREGIVERS: YOUR RIGHT TO REVIEW YOUR CHILD'S DATA</strong>
-            <p style="margin: 10px 0;"><strong>You have the right under COPPA (Children's Online Privacy Protection Act) to review the personal information collected from your child under 13.</strong> This right allows you to see exactly what data has been collected, how it is used, and with whom it has been shared.</p>
-            <p style="margin: 10px 0;"><strong>To exercise your right to request a copy of your child's personal information:</strong></p>
-            <ol style="margin-bottom: 10px;">
-                <li><strong>Email us at:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></li>
-                <li><strong>Subject line:</strong> "COPPA Data Access Request - Child's Data"</li>
-                <li><strong>Include:</strong> Your name, relationship to child, device type/model (if known), and approximate date the app was installed</li>
-            </ol>
-            <p style="margin: 10px 0;"><strong>What you will receive:</strong></p>
-            <ul style="margin-bottom: 10px;">
-                <li>A detailed report of what categories of personal information were collected from your child</li>
-                <li>How that information was used</li>
-                <li>Whether and to whom the information was disclosed (third parties)</li>
-                <li>Instructions on how to delete the data if you choose to do so</li>
-            </ul>
-            <p style="margin: 0;"><strong>Response time:</strong> We will provide the requested information within 30 days of receiving your request. <strong>No fee</strong> is charged for this request.</p>
-        </div>
-        
-        <div class="highlight" style="background: #fef3c7; border-left-color: #f59e0b; padding: 20px; margin-bottom: 20px;">
-            <strong style="font-size: 1.1em;">🛑 PARENTS/CAREGIVERS: YOUR RIGHT TO STOP COLLECTION OR USE OF YOUR CHILD'S DATA</strong>
-            <p style="margin: 10px 0;"><strong>You have the right under COPPA (Children's Online Privacy Protection Act) to request that we stop collecting or using personal information from your child under 13 at any time.</strong> This right allows you to refuse to permit further collection or use of your child's information without having to delete the app. We will honor your request and cease collection within 48 hours.</p>
-            
-            <p style="margin: 10px 0;"><strong>To exercise your right to stop collection or use of your child's data:</strong></p>
-            
-            <p style="margin: 10px 0;"><strong>Method 1: Email Request</strong></p>
-            <ol style="margin-bottom: 15px;">
-                <li><strong>Email us at:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></li>
-                <li><strong>Subject line:</strong> "COPPA Opt-Out Request - Stop Collection of Child's Data"</li>
-                <li><strong>Include:</strong> Your name, relationship to child, device type/model (if known), and specify whether you want to:
-                    <ul>
-                        <li>Stop all future collection of your child's data, OR</li>
-                        <li>Stop specific types of data collection (e.g., analytics, crash reports), OR</li>
-                        <li>Stop all use of previously collected data</li>
-                    </ul>
-                </li>
-            </ol>
-            
-            <p style="margin: 10px 0;"><strong>Method 2: Immediate Self-Service Options</strong></p>
-            <ul style="margin-bottom: 15px;">
-                <li><strong>Disable analytics:</strong> Go to Settings → Privacy & Data → Turn OFF "Analytics" and "Crash Reports"</li>
-                <li><strong>Disable notifications:</strong> Go to Settings → Privacy & Data → Turn OFF "Push Notifications"</li>
-                <li><strong>Reset Advertising ID:</strong> Go to device Settings → Google → Ads → "Reset advertising ID" or "Delete advertising ID"</li>
-                <li><strong>Uninstall the app:</strong> This immediately stops ALL data collection and deletes ALL local data</li>
-            </ul>
-            
-            <p style="margin: 10px 0;"><strong>What happens after you request to stop collection:</strong></p>
-            <ul style="margin-bottom: 10px;">
-                <li>We will stop collecting new personal information from your child within 48 hours</li>
-                <li>We will instruct third-party services (Google AdMob, Firebase) to stop collection</li>
-                <li>Previously collected data will be retained unless you also request deletion</li>
-                <li>Your child can continue using the app with limited functionality, or you can uninstall it</li>
-            </ul>
-            
-            <p style="margin: 0;"><strong>Contact:</strong> Email: <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> | Phone: +91 7488256944 | Address: Hajipur, Bihar 844101, India</p>
         </div>
         
         <div class="highlight" style="background: #e0f2fe; border-left-color: #0284c7;">
@@ -2516,7 +2479,7 @@ Thank you.
             <h2>Contact Us</h2>
             <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
             <p><strong>Email:</strong> <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a></p>
-            <p><strong>Phone:</strong> +91 7488256944 (Available Mon-Fri, 10 AM - 6 PM IST)</p>
+            <p><strong>Phone:</strong> +91 9262700547 (Available Mon-Fri, 10 AM - 6 PM IST)</p>
             <p><strong>Mailing Address:</strong> Hajipur, Bihar 844101, India</p>
             <p><strong>Developer/Data Controller:</strong> Ashish Ranjan, Alok Ranjan, and Himanshu Ranjan (Individual Developers)</p>
             <p><strong>Country of Operation:</strong> India</p>
