@@ -70,6 +70,39 @@
         <p class="last-updated"><strong>Effective Date:</strong> December 27, 2025</p>
         <p class="last-updated"><strong>Version:</strong> 1.1</p>
         
+        <!-- CRITICAL DATA TYPE DISCLOSURE - First Section for Google Play Scanner -->
+        <div style="background: #dc2626; color: white; padding: 20px; margin: 20px 0; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: white; border-bottom: 2px solid white; padding-bottom: 10px;">⚠️ IMPORTANT: DATA COLLECTION DISCLOSURE</h2>
+            <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>This app collects and shares "Device or Other IDs" (HIGH SENSITIVITY data type) as defined by Google Play.</strong></p>
+            <table style="width: 100%; border-collapse: collapse; background: white; color: black; border-radius: 4px;">
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd; width: 30%;"><strong>Data Type:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Device or Other IDs</strong></td>
+                </tr>
+                <tr style="background: #fef2f2;">
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Collected:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #dc2626;">YES</strong> - Advertising ID via com.google.android.gms.permission.AD_ID</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Shared:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #dc2626;">YES</strong> - Shared with Google AdMob for advertising</td>
+                </tr>
+                <tr style="background: #fef2f2;">
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Purpose:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Advertising, ad personalization, and ad measurement</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Sensitivity:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #dc2626;">HIGH</strong> - As classified by Google Play Data Safety</td>
+                </tr>
+                <tr style="background: #fef2f2;">
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>User Control:</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Settings → Google → Ads → "Opt out of Ads Personalization" or "Delete advertising ID"</td>
+                </tr>
+            </table>
+            <p style="margin-top: 15px; margin-bottom: 0; font-size: 0.95em;">For complete details about all data types collected and shared, see the "DATA TYPES COLLECTED AND SHARED" section below.</p>
+        </div>
+        
         <!-- POLICY SCOPE STATEMENT -->
         <div style="background: #f0f9ff; padding: 15px; border-left: 4px solid #0ea5e9; margin: 15px 0;">
             <strong>📋 Who This Policy Applies To:</strong>
@@ -162,6 +195,7 @@
             <ul style="font-size: 0.95em; line-height: 1.7;">
                 <li><strong>✓ We collect Device IDs</strong> (Advertising ID, App Instance ID, FCM Token) automatically for ads and app functionality - You can delete/reset your Ad ID in device settings anytime</li>
                 <li><strong>✓ YES, your data IS shared with third parties</strong> - Your Advertising ID is shared with Google AdMob for targeted advertising. Your App Instance ID and FCM Token are shared with Firebase for analytics/notifications (only if you opt-in). See complete list below.</li>
+                <li><strong>✓ LEGAL BASIS (GDPR Art. 6(1)):</strong> Consent for ads/analytics/crash reports | Contract for purchases/notifications | Legitimate Interest for app configuration. See "Legal Basis for Processing" section below.</li>
                 <li><strong>✓ You have the RIGHT TO KNOW</strong> - Request a full disclosure of what data we've collected about you and who we've shared it with by emailing <a href="mailto:un0scroll@gmail.com">un0scroll@gmail.com</a> (CCPA/VCDPA right)</li>
                 <li><strong>✓ You can OPT-OUT of targeted ads</strong> - Go to device Settings → Google → Ads → "Opt out of Ads Personalization" (you'll still see ads, but not personalized ones). Or delete your Ad ID entirely on Android 12+.</li>
                 <li><strong>✓ Analytics & crash reports are OPT-IN ONLY</strong> (disabled by default) - We only collect this data if you explicitly enable it in Settings → Privacy & Data</li>
@@ -233,6 +267,288 @@
             </ul>
         </div>
         
+        <!-- NETWORK ENDPOINTS DISCLOSURE - Google Play Compliance -->
+        <div style="background: #eff6ff; border: 3px solid #2563eb; padding: 25px; margin: 20px 0;">
+            <h2 style="margin-top: 0; color: #2563eb;">🌐 NETWORK ENDPOINTS DISCLOSURE</h2>
+            <p style="font-size: 1.05em;"><strong>This app transmits data to the following network endpoints. All connections use encrypted HTTPS.</strong></p>
+            
+            <h3 style="color: #1e40af; margin-top: 15px;">Firebase Services (googleapis.com & crashlytics.com)</h3>
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95em;">
+                <thead>
+                    <tr style="background: #dbeafe;">
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Endpoint</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Purpose</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Data Transmitted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>firebaseinstallations.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Firebase Installations API - manages app instance identifiers</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">App Instance ID, device info</td>
+                    </tr>
+                    <tr style="background: #f0f9ff;">
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>firebaselogging.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Firebase Analytics logging (opt-in only)</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Analytics events, device info</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>firebase-settings.crashlytics.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Crashlytics configuration and settings</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">App config, feature flags</td>
+                    </tr>
+                    <tr style="background: #f0f9ff;">
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>fcm.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Firebase Cloud Messaging for notifications</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">FCM Token, device info</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>firebaseremoteconfig.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Remote configuration and feature flags</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">App Instance ID, app version</td>
+                    </tr>
+                    <tr style="background: #f0f9ff;">
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>firebasecrashlytics.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Crash reporting (opt-in only)</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Crash reports, device info</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="color: #1e40af; margin-top: 20px;">Google Advertising Services (AdMob)</h3>
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95em;">
+                <thead>
+                    <tr style="background: #dbeafe;">
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Endpoint</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Purpose</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Data Transmitted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>googlesyndication.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Ad serving and content delivery</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Advertising ID, device info</td>
+                    </tr>
+                    <tr style="background: #f0f9ff;">
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>googleadservices.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Ad measurement and conversion tracking</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Advertising ID, ad interactions</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>doubleclick.net</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Ad serving and real-time bidding</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Advertising ID, device info</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="color: #1e40af; margin-top: 20px;">Google Play Services</h3>
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95em;">
+                <thead>
+                    <tr style="background: #dbeafe;">
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Endpoint</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Purpose</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #93c5fd;">Data Transmitted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;"><strong>play.googleapis.com</strong></td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">In-app purchases and billing</td>
+                        <td style="padding: 10px; border: 1px solid #93c5fd;">Purchase info, Google account</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="margin-top: 15px;"><strong>📋 Complete endpoint list:</strong> See Section 4 "Where Your Data is Transmitted" for the full list of all network endpoints with detailed explanations.</p>
+        </div>
+        
+        <!-- LEGAL BASIS FOR PROCESSING - GDPR Art. 6(1), POPIA § 18 Compliance -->
+        <div style="background: #f0fdf4; border: 3px solid #16a34a; padding: 25px; margin: 20px 0;">
+            <h2 style="margin-top: 0; color: #16a34a;">⚖️ LEGAL BASIS FOR PROCESSING YOUR DATA</h2>
+            <p style="font-size: 1.05em;"><strong>Under GDPR Article 6(1), POPIA § 11, and other privacy laws, we must have a lawful basis to process your personal data. This section explains the legal grounds we rely on.</strong></p>
+            
+            <h3 style="color: #15803d; margin-top: 20px;">GDPR Article 6(1) - Lawfulness of Processing</h3>
+            <p>We rely on the following legal bases under GDPR:</p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.95em;">
+                <thead>
+                    <tr style="background: #dcfce7;">
+                        <th style="padding: 10px; text-align: left; border: 1px solid #86efac;">Data Processing</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #86efac;">Legal Basis (GDPR Art. 6(1))</th>
+                        <th style="padding: 10px; text-align: left; border: 1px solid #86efac;">Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Personalized Advertising</strong><br>(Google AdMob)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(a) - Consent</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">You provide consent via the Google UMP consent dialog shown on first launch. You can withdraw consent anytime via device Settings → Google → Ads.</td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Crash Reporting</strong><br>(Firebase Crashlytics)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(a) - Consent</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Disabled by default. You explicitly opt-in via in-app Settings → Privacy & Data. You can opt-out anytime.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Analytics</strong><br>(Firebase Analytics)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(a) - Consent</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Disabled by default. You explicitly opt-in via in-app Settings → Privacy & Data. You can opt-out anytime.</td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>In-App Purchases</strong><br>(Google Play Billing)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(b) - Contract</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Processing is necessary to perform the purchase contract you initiate when buying premium features.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Push Notifications</strong><br>(Firebase Cloud Messaging)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(b) - Contract</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Processing is necessary to deliver the app's core notification features. You can disable via Android Settings.</td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>App Configuration</strong><br>(Firebase Remote Config)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(f) - Legitimate Interest</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Our legitimate interest in ensuring app functionality, feature flags, and configuration. Minimal data processed (App Instance ID only).</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>App Instance Management</strong><br>(Firebase Installations)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(f) - Legitimate Interest</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">Our legitimate interest in managing app instances for service delivery. Required for Firebase services to function.</td>
+                    </tr>
+                    <tr style="background: #f0fdf4;">
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Content Blocking</strong><br>(Accessibility Service)</td>
+                        <td style="padding: 10px; border: 1px solid #86efac;"><strong>Art. 6(1)(a) - Consent</strong></td>
+                        <td style="padding: 10px; border: 1px solid #86efac;">You explicitly enable the Accessibility Service in Android Settings. No data is transmitted; processing is local only.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="color: #15803d; margin-top: 25px;">POPIA (South Africa) - Section 11 Justification for Processing</h3>
+            <p>For users in South Africa, we process personal information based on the following justifications under POPIA:</p>
+            <ul>
+                <li><strong>§ 11(1)(a) - Consent:</strong> Personalized advertising, analytics, and crash reporting (where you have opted in)</li>
+                <li><strong>§ 11(1)(b) - Contract:</strong> In-app purchases and subscription management</li>
+                <li><strong>§ 11(1)(f) - Legitimate Interest:</strong> App configuration, service delivery, and security</li>
+            </ul>
+            <p><strong>POPIA § 18 Notification:</strong> This privacy policy serves as your notification under POPIA § 18, informing you of: (d) the name and address of the responsible party (see Contact section); (e) whether provision of information is voluntary or mandatory; and (f) the consequences of failure to provide information (limited app functionality).</p>
+            
+            <h3 style="color: #15803d; margin-top: 25px;">Your Rights Regarding Legal Basis</h3>
+            <ul>
+                <li><strong>Consent-based processing:</strong> You can withdraw consent at any time without affecting the lawfulness of processing before withdrawal</li>
+                <li><strong>Legitimate interest processing:</strong> You have the right to object under GDPR Art. 21. Contact us at un0scroll@gmail.com to exercise this right</li>
+                <li><strong>Contract-based processing:</strong> This processing is necessary for service delivery; you can stop it by not using those features</li>
+            </ul>
+            
+            <p style="margin-top: 15px;"><strong>📋 Detailed consent management:</strong> See Section 3.2 "Consent Management and User Control" for complete information on how to manage your consent choices.</p>
+        </div>
+        
+        <!-- ANDROID PERMISSIONS DISCLOSURE - Google Play Compliance -->
+        <div style="background: #fef3c7; border: 3px solid #f59e0b; padding: 25px; margin: 20px 0;">
+            <h2 style="margin-top: 0; color: #b45309;">📱 ANDROID PERMISSIONS DISCLOSURE</h2>
+            <p style="font-size: 1.05em;"><strong>This app requests the following 17 Android permissions. All permissions are used only for the purposes described below.</strong></p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.9em;">
+                <thead>
+                    <tr style="background: #fef3c7;">
+                        <th style="padding: 8px; text-align: left; border: 1px solid #fcd34d;">Permission</th>
+                        <th style="padding: 8px; text-align: left; border: 1px solid #fcd34d;">Purpose</th>
+                        <th style="padding: 8px; text-align: left; border: 1px solid #fcd34d;">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>ACCESS_ADSERVICES_AD_ID</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Privacy Sandbox Ad ID for advertising (Android 13+)</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Advertising</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>ACCESS_ADSERVICES_ATTRIBUTION</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Privacy Sandbox ad attribution measurement</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Advertising</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>ACCESS_ADSERVICES_TOPICS</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Privacy Sandbox interest topics for ads</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Advertising</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>ACCESS_NETWORK_STATE</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Check internet connection status</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Core</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>AD_ID</strong> (com.google.android.gms)</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Traditional Advertising ID for AdMob</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Advertising</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>BILLING</strong> (com.android.vending)</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">In-app purchases via Google Play</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Purchases</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>BIND_GET_INSTALL_REFERRER_SERVICE</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Track app install source for marketing</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Advertising</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>DYNAMIC_RECEIVER_NOT_EXPORTED</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Internal security for broadcast receivers</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">System</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>FOREGROUND_SERVICE</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Run blocking service continuously</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Background</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>FOREGROUND_SERVICE_SPECIAL_USE</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Android 14+ specialized foreground service</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Background</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>INTERNET</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Load ads, sync purchases, send crash reports</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Core</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>POST_NOTIFICATIONS</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Send notifications (Android 13+)</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Notifications</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>RECEIVE</strong> (com.google.android.c2dm)</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Receive Firebase push notifications</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Notifications</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>RECEIVE_BOOT_COMPLETED</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Restart blocking service after reboot</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Background</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Request battery exemption for reliable blocking</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Background</td>
+                    </tr>
+                    <tr style="background: #fffbeb;">
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>VIBRATE</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Vibrate for notification alerts</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Notifications</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;"><strong>WAKE_LOCK</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Keep device awake during sync tasks</td>
+                        <td style="padding: 8px; border: 1px solid #fcd34d;">Background</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="margin-top: 15px;"><strong>We do NOT request:</strong> Location, Camera, Microphone, Contacts, Phone, SMS, Storage, Calendar, or Biometric permissions.</p>
+            <p><strong>📋 Detailed permission explanations:</strong> See Section 11 "Permissions Explained" for complete descriptions of each permission.</p>
+        </div>
+        
         <div class="highlight" style="background: #fee; border-left-color: #dc2626;">
             <strong>🔴 IMPORTANT: Personal Information Collection Disclosure</strong>
             <p><strong>YES, THIS APP COLLECTS AND SHARES PERSONAL INFORMATION.</strong></p>
@@ -250,7 +566,8 @@
             <p><strong>Who We Share Data With:</strong></p>
             <ul style="margin-bottom: 5px;">
                 <li>✓ <strong>Google AdMob</strong> - For advertising (googlesyndication.com, googleadservices.com, doubleclick.net)</li>
-                <li>✓ <strong>Firebase (Google)</strong> - For notifications, configuration, crash reports (opt-in), analytics (opt-in) (firebaseinstallations.googleapis.com, fcm.googleapis.com, etc.)</li>
+                <li>✓ <strong>Firebase (Google)</strong> - For notifications, configuration, crash reports (opt-in), analytics (opt-in)
+                    <br><em style="font-size: 0.9em; color: #1e40af;">Endpoints: firebaseinstallations.googleapis.com, firebaselogging.googleapis.com, firebase-settings.crashlytics.com, fcm.googleapis.com, firebaseremoteconfig.googleapis.com</em></li>
                 <li>✓ <strong>Google Play</strong> - For in-app purchases (play.googleapis.com)</li>
             </ul>
             
@@ -2940,11 +3257,16 @@ Thank you.
                     <td style="padding: 10px; border: 1px solid #ddd;"><strong>v1.1</strong></td>
                     <td style="padding: 10px; border: 1px solid #ddd;">January 14, 2026</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>Permissions, Endpoints & Data Types Update</strong>
+                        <strong>Permissions, Endpoints, Data Types & Legal Basis Update</strong>
                         <ul style="margin: 5px 0; padding-left: 20px;">
+                            <li>Added critical "DATA COLLECTION DISCLOSURE" banner at top of document for "Device or Other IDs" (HIGH SENSITIVITY)</li>
+                            <li>Added prominent "ANDROID PERMISSIONS DISCLOSURE" section listing all 17 permissions with purposes</li>
+                            <li>Added prominent "LEGAL BASIS FOR PROCESSING YOUR DATA" section with GDPR Art. 6(1) and POPIA § 11 compliance</li>
                             <li>Added prominent "DATA TYPES COLLECTED AND SHARED" disclosure table for Google Play Data Safety compliance</li>
+                            <li>Added prominent "NETWORK ENDPOINTS DISCLOSURE" section with tables for all Firebase, AdMob, and Play endpoints</li>
+                            <li>Explicitly documented firebaseinstallations.googleapis.com, firebaselogging.googleapis.com, and firebase-settings.crashlytics.com endpoints</li>
                             <li>Explicitly documented "Device or Other IDs" as high-sensitivity data type with sharing details</li>
-                            <li>Added firebase-settings.crashlytics.com to documented endpoints</li>
+                            <li>Documented com.google.android.gms.permission.AD_ID permission for Device or Other IDs collection</li>
                             <li>Added FOREGROUND_SERVICE_SPECIAL_USE permission documentation</li>
                             <li>Added REQUEST_IGNORE_BATTERY_OPTIMIZATIONS permission documentation</li>
                             <li>Updated permissions count from 13 to 17 to match all detected permissions</li>
